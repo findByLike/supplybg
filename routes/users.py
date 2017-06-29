@@ -4,6 +4,7 @@ Created on 2017年6月29日
 @author: Administrator
 '''
 from routes import *
+# from models.users import users
 
 main = Blueprint('users', __name__)
 
@@ -13,6 +14,7 @@ main = Blueprint('users', __name__)
 #     return render_template('login.html')
 
 
-@main.route('/')
-def index():
-    return render_template('index.html')
+# @main.route('/')
+# def index():
+# 
+#     return render_template('index.html')
