@@ -21,10 +21,6 @@ def register_routes(app):
     app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
     db.init_app(app)
     
-@app.route('/')
-def index():
-    print(User.query.all())
-    return render_template('index.html')
     
 if(__name__ == '__main__'):
     register_routes(app)
